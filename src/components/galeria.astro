@@ -1,0 +1,34 @@
+<section class="gallery-container rounded-gallery">
+  <img src="/src/static/etse.png" alt="">
+  <img src="/src/static/etse.png" alt="">
+  <img src="/src/static/etse.png" alt="">
+  <img src="/src/static/etse.png" alt="">
+  <img src="/src/static/etse.png" alt="">
+</section>
+
+<style>
+  .gallery-container {
+    display: flex;
+    width: 800px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .gallery-container img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+  }
+  .rounded-gallery {
+    border-radius: 0.5rem; /* Ajusta este valor para redondear mas o menos */
+    overflow: hidden; /* par que las imagenes dentro tambien se redondeeen */
+  }
+  .gallery-container img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+  }
+</style>
