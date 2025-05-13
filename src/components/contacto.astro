@@ -2,69 +2,45 @@
 ---
 
 <section id="contacto" class="relative min-h-screen flex items-center justify-center overflow-hidden">
-  <!-- Fondo degradado azul/violeta -->
-  <div class="absolute inset-0 bg-gradient-to-br from-white via-white to-indigo-100 lg:via-indigo-100 lg:to-indigo-400 z-0"></div>
+  <!-- Fondo degradado que conecta con el footer -->
+  <div class="absolute inset-0 bg-gradient-to-b from-white via-white to-indigo-400 z-0"></div>
 
   <!-- Contenido -->
-  <div class="relative z-10 max-w-6xl mx-auto px-4 flex flex-col lg:flex-row items-center justify-between w-full py-16">
+  <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 flex flex-col lg:flex-row items-center justify-between w-full py-8 sm:py-12 lg:py-16">
     <!-- Formulario -->
-    <div class="bg-white shadow-2xl rounded-lg p-8 w-full lg:w-1/2">
-      <h2 class="text-2xl font-bold text-gray-800 mb-2">Contact our sales team</h2>
-      <p class="text-gray-600 mb-6">Our team is happy to answer your sales questions. Fill out the form and we’ll be in touch as soon as possible.</p>
+    <div class="bg-white/95 shadow-[0_20px_50px_rgba(8,_112,_184,_0.2)] rounded-xl p-6 sm:p-8 w-full max-w-lg mx-auto border-2 border-gray-100 backdrop-blur-md hover:shadow-[0_20px_60px_rgba(8,_112,_184,_0.3)] transition-shadow duration-300">
+      <h2 class="text-xl sm:text-2xl font-bold text-gray-800 mb-2">Contáctanos</h2>
+      <p class="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6">Déjanos tu mensaje y nos pondremos en contacto contigo pronto.</p>
 
       <form id="contactForm" class="space-y-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div>
-            <label class="block text-gray-700 text-sm font-semibold mb-1" for="first-name">First name</label>
-            <input type="text" id="first-name" class="w-full border rounded px-3 py-2" required />
-          </div>
-          <div>
-            <label class="block text-gray-700 text-sm font-semibold mb-1" for="last-name">Last name</label>
-            <input type="text" id="last-name" class="w-full border rounded px-3 py-2" required />
-          </div>
-          <div class="md:col-span-2">
-            <label class="block text-gray-700 text-sm font-semibold mb-1" for="email">Work email</label>
-            <input type="email" id="email" class="w-full border rounded px-3 py-2" required />
-          </div>
-          <div class="md:col-span-2">
-            <label class="block text-gray-700 text-sm font-semibold mb-1" for="company">Company website</label>
-            <input type="url" id="company" class="w-full border rounded px-3 py-2" required />
-          </div>
-          <div>
-            <label class="block text-gray-700 text-sm font-semibold mb-1" for="country">Country</label>
-            <select id="country" class="w-full border rounded px-3 py-2">
-              <option>United States</option>
-              <option>Chile</option>
-              <option>Mexico</option>
-              <option>Argentina</option>
-            </select>
-          </div>
-          <div>
-            <label class="block text-gray-700 text-sm font-semibold mb-1" for="volume">Payments volume</label>
-            <select id="volume" class="w-full border rounded px-3 py-2">
-              <option disabled selected>Select a monthly amount</option>
-              <option>&lt; $10K</option>
-              <option>$10K - $100K</option>
-              <option>&gt; $100K</option>
-            </select>
-          </div>
-          <div class="md:col-span-2">
-            <label class="block text-gray-700 text-sm font-semibold mb-1" for="message">Anything else?</label>
-            <textarea id="message" rows="3" class="w-full border rounded px-3 py-2" placeholder="Tell us more about your project, needs, and timeline."></textarea>
-          </div>
+        <div>
+          <label class="block text-gray-700 text-sm font-semibold mb-1" for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" class="w-full border rounded px-3 py-2 sm:py-2.5 text-sm sm:text-base" required />
+        </div>
+        
+        <div>
+          <label class="block text-gray-700 text-sm font-semibold mb-1" for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" class="w-full border rounded px-3 py-2 sm:py-2.5 text-sm sm:text-base" required />
         </div>
 
-        <button type="submit" class="w-full bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 rounded mt-4 transition-transform active:scale-95">
-          Contact Sales
-        </button>
+        <div>
+          <label class="block text-gray-700 text-sm font-semibold mb-1" for="telefono">Número de teléfono</label>
+          <input type="tel" id="telefono" name="telefono" class="w-full border rounded px-3 py-2 sm:py-2.5 text-sm sm:text-base" required />
+        </div>
+
+        <div>
+            <label class="block text-gray-700 text-sm font-semibold mb-1" for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="3" class="w-full border rounded px-3 py-2 sm:py-2.5 text-sm sm:text-base" placeholder="Escribe tu mensaje aquí..."></textarea>
+          </div>
+
+        <button type="submit" class="w-full bg-indigo-600 text-white rounded py-2.5 sm:py-3 px-4 text-sm sm:text-base font-semibold hover:bg-indigo-700 transition duration-200 hover:scale-[1.02]">
+            Enviar mensaje
+          </button>
       </form>
 
       <!-- Mensaje de éxito -->
-      <div
-        id="successMessage"
-        class="text-center hidden mt-6 p-4 bg-green-100 text-green-800 font-medium rounded-md transition-opacity duration-300 ease-in-out opacity-0"
-      >
-        Mensaje correctamente enviado.
+      <div id="successMessage" class="hidden mt-4 p-4 bg-green-100 text-green-700 rounded">
+        ¡Gracias por tu mensaje! Nos pondremos en contacto pronto.
       </div>
     </div>
 
