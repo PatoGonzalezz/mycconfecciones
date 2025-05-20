@@ -1,0 +1,58 @@
+<div class="slider">
+  <div class="slide-track">
+    <div class="slide"><img src="/mycconfecciones/logo1.jpg" alt="" /></div>
+    <div class="slide"><img src="/mycconfecciones/logo2.png" alt="" /></div>
+    <div class="slide"><img src="/mycconfecciones/logo3.png" alt="" /></div>
+    <div class="slide"><img src="/mycconfecciones/logo4.png" alt="" /></div>
+    <div class="slide"><img src="/mycconfecciones/logo5.png" alt="" /></div>
+    <div class="slide"><img src="/mycconfecciones/logo6.jpg" alt="" /></div>
+    <div class="slide"><img src="/mycconfecciones/logo7.jpg" alt="" /></div>
+
+    <div class="slide"><img src="/mycconfecciones/logo1.jpg" alt="" /></div>
+    <div class="slide"><img src="/mycconfecciones/logo2.png" alt="" /></div>
+    <div class="slide"><img src="/mycconfecciones/logo3.png" alt="" /></div>
+    <div class="slide"><img src="/mycconfecciones/logo4.png" alt="" /></div>
+    <div class="slide"><img src="/mycconfecciones/logo5.png" alt="" /></div>
+    <div class="slide"><img src="/mycconfecciones/logo6.jpg" alt="" /></div>
+    <div class="slide"><img src="/mycconfecciones/logo7.jpg" alt="" /></div>
+  </div>
+</div>
+<style>
+  .slider {
+    width: 75vw; /* o usa clases de Tailwind como w-3/4 */
+    height: auto; /* Considera una altura fija o min-height si es necesario */
+    margin: auto;
+    overflow: hidden;
+  }
+  .slider .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    /* Ahora el ancho debe ser el doble para contener ambos conjuntos */
+    width: calc(200px * 14); /* 7 slides * 2 conjuntos * 200px */
+  }
+  .slider .slide {
+    width: 200px; /* Ancho fijo del slide */
+    height: 100px; /* EJEMPLO: Define una altura para los slides */
+    padding: 0 10px; /* Añade algo de espacio entre imágenes */
+    box-sizing: border-box;
+    flex-shrink: 0; /* Evita que los flex items se encojan */
+  }
+  .slider .slide img {
+    width: 100%;
+    height: 100%; /* Haz que la imagen llene la altura del slide */
+    object-fit: contain; /* o 'cover'; 'contain' asegura que toda la imagen sea visible */
+  }
+
+  @keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      /* Ahora movemos el ancho del primer conjunto completo */
+      -webkit-transform: translateX(calc(-200px * 7));
+      transform: translateX(calc(-200px * 7));
+    }
+  }
+</style>
