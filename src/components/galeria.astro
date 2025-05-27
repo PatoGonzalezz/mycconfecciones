@@ -1,34 +1,17 @@
-<section class="gallery-container rounded-gallery">
-  <img src="/mycconfecciones/etse.png" alt="Imagen galería 1">
-  <img src="/mycconfecciones/etse.png" alt="Imagen galería 2">
-  <img src="/mycconfecciones/etse.png" alt="Imagen galería 3">
-  <img src="/mycconfecciones/etse.png" alt="Imagen galería 4">
-  <img src="/mycconfecciones/etse.png" alt="Imagen galería 5">
-</section>
-
-<style>
-  .gallery-container {
-    display: flex;
-    width: 800px;
-    height: 500px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .gallery-container img {
-    width: 0px;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .8;
-    transition: .5s ease;
-  }
-  .rounded-gallery {
-    border-radius: 0.5rem; /* Ajusta este valor para redondear mas o menos */
-    overflow: hidden; /* par que las imagenes dentro tambien se redondeeen */
-  }
-  .gallery-container img:hover {
-    cursor: crosshair;
-    width: 300px;
-    opacity: 1;
-    filter: contrast(120%);
-  }
-</style>
+<div class="container mx-auto px-4 py-8">
+  <h2 class="text-3xl font-bold text-center mb-8 text-indigo-700">Nuestra Galería</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 image-gallery">
+    <div class="relative overflow-hidden rounded-lg shadow-lg group image-container">
+      <img src="/mycconfecciones/etse.png" class="w-full h-auto transform transition-transform duration-300 group-hover:scale-105 image-item" alt="Imagen 1">
+      </div>
+    <div class="relative overflow-hidden rounded-lg shadow-lg group image-container">
+      <img src="/mycconfecciones/etse.png" class="w-full h-auto transform transition-transform duration-300 group-hover:scale-105 image-item" alt="Imagen 2">
+      </div>
+    <div class="relative overflow-hidden rounded-lg shadow-lg group image-container">
+      <img src="/mycconfecciones/etse.png" class="w-full h-auto transform transition-transform duration-300 group-hover:scale-105 image-item" alt="Imagen 3">
+      </div>
+    <div class="relative overflow-hidden rounded-lg shadow-lg group image-container">
+      <img src="/mycconfecciones/etse.png" class="w-full h-auto transform transition-transform duration-300 group-hover:scale-105 image-item" alt="Imagen 4">
+      </div>
+    </div>
+</div>
