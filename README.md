@@ -1,48 +1,47 @@
-# Astro Starter Kit: Basics
+# 🧵 m&c — Confecciones y Textiles
 
-```sh
-npm create astro@latest -- --template basics
-```
+<p align="center">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" width="100%">
+</p>
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+> **Costuras de gran calidad y un aporte activo para la comunidad de la Quinta Región, Chile.**  
+> Especialistas en uniformes escolares, trajes típicos chilenos y diseños textiles personalizados con acabados profesionales.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## 🌟 Sobre m&c
 
-## 🚀 Project Structure
+**m&c** es un taller de confección textil comprometido con la excelencia técnica, la identidad local y la durabilidad de cada prenda. Nos dedicamos a materializar proyectos de costura con altos estándares de calidad, respondiendo a las necesidades de colegios, agrupaciones culturales y clientes particulares en toda la **Quinta Región**.
 
-Inside of your Astro project, you'll see the following folders and files:
+### Nuestras Líneas de Confección:
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+*   **🏫 Uniformes Escolares:** Diseños de alta resistencia al desgaste diario, garantizando comodidad, elasticidad y durabilidad para el año escolar.
+*   **🇨🇱 Trajes Típicos:** Confección respetuosa y detallista de vestimentas tradicionales para festividades nacionales, bailes típicos y representaciones culturales con un gran nivel de acabado.
+*   **🎨 Diseños Personalizados:** Creación de prendas exclusivas sobre medidas, adaptadas a requerimientos específicos de diseño, telas y hormas únicas.
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+---
 
-## 🧞 Commands
+## 🛠️ Tecnologías y Stack del Proyecto Web
 
-All commands are run from the root of the project, from a terminal:
+Este repositorio aloja la plataforma web y landing page oficial de **m&c**, diseñada para dar visibilidad al taller y agilizar la cotización de pedidos.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+*   **Framework:** [Astro](https://astro.build/) (Generación de sitios estáticos ultrarrápidos)
+*   **Estilos:** [Tailwind CSS v4](https://tailwindcss.com/) (Diseño responsivo y estilizado moderno)
+*   **Despliegue:** [GitHub Pages](https://pages.github.com/) / [Netlify](https://www.netlify.com/)
 
-## 👀 Want to learn more?
+---
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 🚀 Instalación y Desarrollo Local
+
+Si deseas clonar este proyecto y ejecutarlo en tu entorno local para desarrollo o testing, sigue estos pasos:
+
+### Prerrequisitos
+
+Asegúrate de tener instalado [Node.js](https://nodejs.org/) (versión 18 o superior recomendada) y tu gestor de paquetes favorito (`npm`, `pnpm` o `yarn`).
+
+### Pasos
+
+1. **Clonar el repositorio:**
+   ```bash
+   git clone [https://github.com/tu-usuario/myc-confecciones.git](https://github.com/tu-usuario/myc-confecciones.git)
+   cd myc-confecciones
